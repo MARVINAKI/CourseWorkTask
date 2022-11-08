@@ -11,5 +11,9 @@ public class Main {
             }
         }
         System.out.println(check ? "YES" : "NO");
+
+        String str1 = "Топот";
+        str1 = str1.toLowerCase().replace(" ", "");
+        System.out.println(str1.equals(new StringBuilder(str1).reverse().toString())?"YES":"NO");
     }
 }
